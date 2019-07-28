@@ -40,3 +40,23 @@ let baseFunction=function(): boolean{
     console.log(JsonObj);
     return true;
 }
+type Person = {
+    name: string;
+    age: number;
+    location: string;
+};
+
+let IndianPersion: Person={
+    name:"Kowshik",
+    age:22,
+    location:"India"
+};
+
+console.log(IndianPersion);
+
+let JsonObject: any={"PersonsInfo":[]};
+let Person1:any={id:1,Information:{name:"Kowshik",age:22,location:"India"}};
+let Person2:any={id:2,Information:{name:"Karthik",age:23,location:"India"}};
+JsonObject.PersonsInfo.push(Person1);
+JsonObject.PersonsInfo.push(Person2);
+console.log(JsonObject);

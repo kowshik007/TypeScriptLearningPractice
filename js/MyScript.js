@@ -59,3 +59,15 @@ var baseFunction = function () {
     console.log(JsonObj);
     return true;
 };
+var IndianPersion = {
+    name: "Kowshik",
+    age: 22,
+    location: "India"
+};
+console.log(IndianPersion);
+var JsonObject = { "PersonsInfo": [] };
+var Person1 = { id: 1, Information: { name: "Kowshik", age: 22, location: "India" } };
+var Person2 = { id: 2, Information: { name: "Karthik", age: 23, location: "India" } };
+JsonObject.PersonsInfo.push(Person1);
+JsonObject.PersonsInfo.push(Person2);
+console.log(JsonObject);
