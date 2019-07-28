@@ -1,4 +1,5 @@
-console.log("Hello world!");
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var SignIn = /** @class */ (function () {
     function SignIn() {
     }
@@ -46,16 +47,4 @@ var SignIn = /** @class */ (function () {
     });
     return SignIn;
 }());
-var SignInobj = new SignIn();
-var baseFunction = function () {
-    SignInobj.setEmail = document.getElementById("exampleInputEmail1").value;
-    SignInobj.setPassword = document.getElementById("exampleInputPassword1").value;
-    SignInobj.setTandC = document.getElementById("exampleCheck1").checked;
-    var JsonObj = {};
-    if (SignInobj.getTandC) {
-        JsonObj.email = SignInobj.getEmail;
-        JsonObj.password = SignInobj.getPassword;
-    }
-    console.log(JsonObj);
-    return true;
-};
+exports.default = SignIn;
